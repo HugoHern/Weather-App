@@ -34,10 +34,10 @@ function App() {
           <p>Please type in a city or town and then press the ENTER key.</p>
         </div>
       ): (
-        <div>
-          <p>{weatherData.name}</p>
-          <p>{Math.round(weatherData.main.temp)}</p>
-          <p>{weatherData.weather[0].main}</p>
+        <div className='weather-data'>
+          <p className='city'>{weatherData.name}</p>
+          <p className='temp'>{Math.round(weatherData.main.temp)}</p>
+          <p className='weather'>{weatherData.weather[0].main}</p>
         </div>
       )}
 
